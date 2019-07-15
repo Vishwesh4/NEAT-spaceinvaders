@@ -70,8 +70,8 @@ based on these three methods
 
 ### Fitness Function
 For any evolution based algorithm, fitness funtion is a very important part of the algorithm. In this we
-use the following fitness function:-
-<font size="5">fitness = 0.8xhigh_score + 0.01xframe + 11xaliens_dead + 0.5xcounter + penalty</font><i></i>
+use the following fitness function:-<br>
+<font size="5">fitness = 0.8xhigh_score + 0.01xframe + 11xaliens_dead + 0.5xcounter + penalty</font><i></i><br>
 Variables:-
   - frame: denotes how many frames the bot survived
   - aliens_dead: denotes how many aliens it killed
@@ -83,16 +83,16 @@ Variables:-
 
 ![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/random_bot.gif)
 
-- Input array bot
-We observe that the bot doesnt perform better than a random bot
+- Input array bot<br>
+We observe that the bot doesnt perform well and has not learnt anything
 
 ![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/array_input_bot.gif)
 
-- Image_v1 bot
+- Image_v1 bot<br>
 We observe that the bot is moving constantly and shooting. This is improving its survivabiltiy, in
 further genrations the bot becomes better in surviving by constant moving. However its not moving based
-on the bullet trajectory, hence it dies often. Sadly, I wasn't able to have a footage of that simulation
-which is captured using gym's monitor class
+on the bullet trajectory, hence it dies often. Sadly, I wasn't able to have a better footage which is
+captured using gym's monitor class
 
 ![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/image_bot_v1.gif)
 
@@ -106,23 +106,25 @@ This exponentially increases its survivabiltiy and hence it was able to beat the
 - Image_v1 average fitness graph
 We see that the progress is pretty slow and steady. The graph shows the fitness after 400th genration
 
-![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/avg_fitness_image.svg)
-
+![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/avg_fitness_image.svg?sanitize=true)
 
 - Image_v2 average fitness graph
 We see that the progress is fast though with high standard deviation. The spike denotes finishing the
 game which gives a default fitness value to cross the threshold
 
-![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/avg_fitness_image_v2.svg)
-
+![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/avg_fitness_image_v2.svg?sanitize=true)
 
 - Image_v2 speciation graph
 
-![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/speciation1.svg)
+![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/speciation1.svg?sanitize=true)
 
 - What the bot sees
 
 ![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/bots_vision.png)
+
+- Network
+
+![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/plots_image/nets2.gv.svg?sanitize=true)
 
 ## Running the test
 Before running the main code ensure that plots_image,recording_image,saved_models_image directories are
