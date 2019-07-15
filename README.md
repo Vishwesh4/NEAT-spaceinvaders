@@ -57,7 +57,7 @@ based on these three methods
   to beat the game, however it was observed that the bot was consistent in killing decent number of bots
   but it seldom killed high number of enemies. In this method we observed slow yet steady growth in
   number of enemies killed with each generation.
-  <b>Overall it took 847 generations to beat the game</b>
+  <b>Overall it took 447 generations to beat the game</b>
 
 - <ins>Image_v2 input bot</ins>  
   In this method we feed the network a cropped version to the bot, as its sufficient to provide the bot
@@ -96,19 +96,19 @@ captured using gym's monitor class
 
 ![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/image_bot_v1.gif)
 
-- Image_v2 bot
+- Image_v2 bot<br>
 We observe that the bot has found a really intresting stratergy. It now hides behind a rock and shoots.
 This exponentially increases its survivabiltiy and hence it was able to beat the game faster.
 
 ![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/image_bot_v2.gif)
 
 ## Visualization
-- Image_v1 average fitness graph
-We see that the progress is pretty slow and steady. The graph shows the fitness after 400th genration
+- Image_v1 average fitness graph<br>
+We see that the progress is pretty slow and steady
 
 ![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/avg_fitness_image.svg?sanitize=true)
 
-- Image_v2 average fitness graph
+- Image_v2 average fitness graph<br>
 We see that the progress is fast though with high standard deviation. The spike denotes finishing the
 game which gives a default fitness value to cross the threshold
 
@@ -129,7 +129,7 @@ The network is too big, so click on the line to see
 
 ## Running the test
 Before running the main code ensure that plots_image,recording_image,saved_models_image directories are
-created
+created<br><br>
 File description
 * `1 - AI_bot_array.py` - Main code based on input array method
 * `2 - AI_bot_image.py` - Main code based on image_v1 input method
@@ -145,6 +145,7 @@ File description
 - [NEAT documentation](https://neat-python.readthedocs.io/en/latest/neat_overview.html)
 - [NEAT paper](http://nn.cs.utexas.edu/downloads/papers/stanley.cec02.pdf)
 - [OpenAI's gym](https://gym.openai.com/docs/)
+
 ## Further Note
 The code can be modified and used for other NEAT based problems by just changing the eval_genomes
 functions which helps in modification of fitness score of all genomes in the genration
