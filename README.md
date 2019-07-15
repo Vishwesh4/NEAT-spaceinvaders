@@ -123,6 +123,7 @@ game which gives a default fitness value to cross the threshold
 ![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/images_git/bots_vision.png)
 
 - Network
+The network is too big, so click on the line to see
 
 ![Alttext](https://raw.github.com/Vishwesh4/NEAT-spaceinvaders/master/plots_image/nets2.gv.svg?sanitize=true)
 
