@@ -130,6 +130,11 @@ The network is too big, so click on the line to see
 ## Running the test
 Before running the main code ensure that plots_image,recording_image,saved_models_image directories are
 created<br><br>
+For running the NEAT algorithm
+  $ mkdir plots_image,recording_image,saved_models_image
+  $ python AI_bot_image_v2.py
+For running the best_bot genome or network
+  $ python best_bot_simulation.py
 File description
 * `1 - AI_bot_array.py` - Main code based on input array method
 * `2 - AI_bot_image.py` - Main code based on image_v1 input method
@@ -140,6 +145,8 @@ File description
 * `7 - neat-checkpoint-116` - checkpoint for image_v2, can start training after gen 116 by loading this file
 * `8 - best_bot.pkl` - genome or network data for the best bot for image_v2
 * `9 - plots_image` - directory containg all graphs for image_v2
+* `10 - best_bot_simulation.py` - code to play the genome contained in the best_bot.pkl
+
 
 ## Reference
 - [NEAT documentation](https://neat-python.readthedocs.io/en/latest/neat_overview.html)
