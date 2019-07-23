@@ -130,11 +130,12 @@ The network is too big, so click on the line to see
 ## Running the test
 Before running the main code ensure that plots_image,recording_image,saved_models_image directories are
 created<br><br>
-For running the NEAT algorithm
-  $ mkdir plots_image,recording_image,saved_models_image
-  $ python AI_bot_image_v2.py
-For running the best_bot genome or network
-  $ python best_bot_simulation.py
+For running the NEAT algorithm<br>
+`mkdir plots_image,recording_image,saved_models_image`<br>
+`python AI_bot_image_v2.py`<br>
+For running the best_bot genome or network<br>
+`python best_bot_simulation.py`<br>
+Note: The best_bot may not always beat the game, it may sometimes fail to do so<br>
 File description
 * `1 - AI_bot_array.py` - Main code based on input array method
 * `2 - AI_bot_image.py` - Main code based on image_v1 input method
